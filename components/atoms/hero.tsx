@@ -28,8 +28,6 @@ export default function Hero() {
           role="button"
         >
           <Button size={"lg"}>Register</Button>
-
-          
         </div>
       </div>
       <div className="lg:mr-40 sm:mr-0 sm:px-48 lg:px-0" role="img">
