@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import Autoplay from "embla-carousel-autoplay";
+import Hero from "./hero";
 
 export default function CarouselAtom() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -37,24 +38,17 @@ export default function CarouselAtom() {
         setApi={setApi}
         plugins={[
           Autoplay({
-            delay: 2000,
+            delay: 5000,
           }),
         ]}
         className="w-full max-w-full flex-1"
       >
-        <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index}>
-              <Card>
-                <CardContent className="flex w-full items-center justify-center p-6">
-                  <span className="text-4xl font-semibold flex items-center">
-                    <Image
-                      src={"./next.svg"}
-                      alt="img"
-                      width={1000}
-                      height={500}
-                    />
-                  </span>
+        <CarouselContent className="border-none">
+          {Array.from({ length: 3 }).map((_, index) => (
+            <CarouselItem key={index} className="border-none">
+              <Card className="border-none">
+                <CardContent className="flex w-full items-center justify-center p-6 bg-[#F5F7FA] border-none">
+                  <Hero />
                 </CardContent>
               </Card>
             </CarouselItem>
@@ -63,15 +57,15 @@ export default function CarouselAtom() {
         {/* <CarouselPrevious />
         <CarouselNext /> */}
         <div className="py-2 text-center text-sm text-muted-foreground">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {Array.from({ length: 3 }).map((_, index) => (
             <Button
               size="icon"
               className={
                 "h-2 w-2 mx-1 rounded-full data-[active='false']:bg-[#4CAF4F]/30 data-[active='true']:bg-[#4CAF4F]"
               }
-              data-active={index === current}
+              data-active={index === current - 1}
             >
-              <span className="sr-only">slide {current + 1} </span>
+              {/* <span className="sr-only">slide {current} </span> */}
             </Button>
           ))}
         </div>
