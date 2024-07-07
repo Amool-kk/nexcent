@@ -157,6 +157,7 @@ export default function Body() {
                     alt={`client${index}`}
                     width={40}
                     height={40}
+                    key={`client${index}`}
                   />
                 ))}
               </div>
@@ -175,10 +176,7 @@ export default function Body() {
             Caring is the new marketing
           </h1>
           <p className="text-[#717171] dark:text-[rgba(255,255,255,0.7)] text-[16px] font-normal text-center xl:w-[40%] my-7 lg:w-[80%] mx-auto">
-            The Nexcent blog is the best place to read about the latest
-            membership insights, trends and more. See who's joining the
-            community, read about how our community are increasing their
-            membership income and lot's more.​
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, dolorem mollitia. Quasi ducimus quos et unde a inventore! At facere consectetur eveniet possimus, aut beatae unde itaque eos nihil. Dolore.
           </p>
         </div>
         <div>

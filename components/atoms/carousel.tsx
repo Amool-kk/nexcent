@@ -65,6 +65,7 @@ export default function CarouselAtom() {
                 "h-2 w-2 mx-1 rounded-full data-[active='false']:bg-[#4CAF4F]/30 data-[active='true']:bg-[#4CAF4F]"
               }
               data-active={index === current - 1}
+              key={`dot${index}`}
             >
               {/* <span className="sr-only">slide {current} </span> */}
             </Button>
