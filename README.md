@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Project Overview
 
-## Getting Started
+This project implements a website based on a Figma design using Next.js, Tailwind CSS, ShadCN and react-countup for animations. It includes a dark mode toggle, responsive design, a carousel for the first section, and a smooth count-up animation.
 
-First, run the development server:
+### Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: React framework for server-rendered applications.
+- **Tailwind CSS**: Utility-first CSS framework.
+- **react-countup**: For number animations.
+- **ShadCN**: Library for animations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tasks Completed
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Replicated Figma design with enhancements.
+2. Implemented dark mode toggle in the header.
+3. Ensured responsive design across all screen sizes.
+4. Added a functional carousel for the first section.
+5. Integrated a smooth count-up animation.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Additional Improvements
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Optimized for performance and fast page load times.
+- Ensured accessibility and maintained code quality.
