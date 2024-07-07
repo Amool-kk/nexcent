@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import Autoplay from "embla-carousel-autoplay";
-import Hero from "./hero";
+import Hero, { Hero2 } from "./hero";
 
 export default function CarouselAtom() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -48,7 +48,8 @@ export default function CarouselAtom() {
             <CarouselItem key={index} className="border-none">
               <Card className="border-none">
                 <CardContent className="flex w-full items-center justify-center p-6 bg-[#F5F7FA] border-none">
-                  <Hero />
+                  {(index == 0 || index == 2) && <Hero />}
+                  {index == 1 && <Hero2 />}
                 </CardContent>
               </Card>
             </CarouselItem>
